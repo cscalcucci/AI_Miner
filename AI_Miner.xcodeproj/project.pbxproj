@@ -14,6 +14,8 @@
 		66395AF81BA1547C00023E9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66395AF71BA1547C00023E9D /* Images.xcassets */; };
 		66395AFB1BA1547C00023E9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66395AF91BA1547C00023E9D /* LaunchScreen.xib */; };
 		66395B071BA1547C00023E9D /* AI_MinerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66395B061BA1547C00023E9D /* AI_MinerTests.swift */; };
+		66395B111BA154A600023E9D /* Miner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66395B101BA154A600023E9D /* Miner.swift */; };
+		66A792571BCE272E006A3C48 /* Singleton_Miner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A792561BCE272E006A3C48 /* Singleton_Miner.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		66395B001BA1547C00023E9D /* AI_MinerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AI_MinerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66395B051BA1547C00023E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66395B061BA1547C00023E9D /* AI_MinerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_MinerTests.swift; sourceTree = "<group>"; };
+		66395B101BA154A600023E9D /* Miner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Miner.swift; path = ../Miner.swift; sourceTree = "<group>"; };
+		66A792561BCE272E006A3C48 /* Singleton_Miner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Singleton_Miner.swift; path = ../Singleton_Miner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +83,10 @@
 		66395AEA1BA1547C00023E9D /* AI_Miner */ = {
 			isa = PBXGroup;
 			children = (
+				66A792561BCE272E006A3C48 /* Singleton_Miner.swift */,
 				66395AED1BA1547C00023E9D /* AppDelegate.swift */,
 				66395AF21BA1547C00023E9D /* ViewController.swift */,
+				66395B101BA154A600023E9D /* Miner.swift */,
 				66395AF41BA1547C00023E9D /* Main.storyboard */,
 				66395AF71BA1547C00023E9D /* Images.xcassets */,
 				66395AF91BA1547C00023E9D /* LaunchScreen.xib */,
@@ -159,11 +165,14 @@
 		66395AE01BA1547C00023E9D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Aphelion;
 				TargetAttributes = {
 					66395AE71BA1547C00023E9D = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = KQRP2QXFVV;
 					};
 					66395AFF1BA1547C00023E9D = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -215,7 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A792571BCE272E006A3C48 /* Singleton_Miner.swift in Sources */,
 				66395AF31BA1547C00023E9D /* ViewController.swift in Sources */,
+				66395B111BA154A600023E9D /* Miner.swift in Sources */,
 				66395AEE1BA1547C00023E9D /* AppDelegate.swift in Sources */,
 				66395AF11BA1547C00023E9D /* AI_Miner.xcdatamodeld in Sources */,
 			);
@@ -344,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AI_Miner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +366,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AI_Miner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +426,7 @@
 				66395B0C1BA1547C00023E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66395B0D1BA1547C00023E9D /* Build configuration list for PBXNativeTarget "AI_MinerTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +435,7 @@
 				66395B0F1BA1547C00023E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
